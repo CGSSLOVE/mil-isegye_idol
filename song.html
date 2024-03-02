@@ -3,8 +3,23 @@
 <head>
 	<title>이세계 아이돌</title>
 	<meta charset="utf-8">
+
+	<script>
+	function check(){
+		var scp=document.getElementsByName("song");
+		alert(scp[0].value);
+		var scp1=document.getElementById("song").value;
+		if(scp1=="lockdown"){
+		alert("wow");
+		}
+	}
+	</script>
 </head>
 <body>
+	<input type="button" value="night" onclick='check()'/>
+	<input type="button" value="info" onclick="alert('이세계 아이돌의 노래입니다')"/>
+	<input type="text" id="song" name="song" onchange="check()" />
+	<input type="text" onkeydown="alert('키누름')" />
 	<h1>
 		<a href="index.html">이세계아이돌</a>
 	</h1>
@@ -13,19 +28,18 @@
 		<li><a href="member.html">멤버</a></li>
 		<li><a href="song.html">노래</a></li>
 	</ul>
-
 	<p>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/fgSXAKsq-Vo?si=ghMmvhMnJW4-fpRn" 
 				title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
 				clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
 		</iframe>
-	</p>
-	
+	</p>	
 	<p>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/rDFUl2mHIW4?si=Gl3gAKKnZ5Fh-0RM" title="YouTube video player" frameborder="0" 
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
 		</iframe>
-	</p>
+	</p> 
+	
 	<!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -38,7 +52,5 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
-<!--End of Tawk.to Script-->
-
 </body>
 	</html>
