@@ -20,8 +20,11 @@
 			document.getElementByID("backcolor").value="day";
 			alert("변경");
 		}
-		if(document.getElementByID("backcolor").value=="day"){
+		else if(document.getElementByID("backcolor").value=="day"){
 			document.getElementByID("backcolor").value="night";
+		}
+		else {
+			alert("오류");
 		}
 		}
 	}
