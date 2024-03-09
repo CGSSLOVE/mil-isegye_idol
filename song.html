@@ -16,13 +16,13 @@
 	</script>
 	<script>
 	function daynight(){
-		var va1=document.getElementByID("backcolor").value;
+		var va1=document.getElementById("backcolor").value;
 		if(va1=="night"){
-			document.getElementByID("backcolor").value="day";
+			document.getElementById("backcolor").value="day";
 			alert("변경");
 		}
 		else if(va1=="day"){
-			document.getElementByID("backcolor").value="night";
+			document.getElementById("backcolor").value="night";
 		}
 		else {
 			alert("오류");
