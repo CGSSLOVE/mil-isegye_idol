@@ -13,9 +13,12 @@
 		alert("wow");
 		}
 	}
+	</script>
+	<script>
 	function daynight(){
 		if(document.getElementByID("backcolor").value=="night"){
 			document.getElementByID("backcolor").value="day";
+			alert("변경");
 		}
 		if(document.getElementByID("backcolor").value=="day"){
 			document.getElementByID("backcolor").value="night";
@@ -27,6 +30,7 @@
 <body>
 	<input type="button" id="backcolor" value="night" onclick="daynight()"/>
 	<input type="button" value="info" onclick="alert('이세계 아이돌의 노래입니다')"/>
+	<input type="button" value="info" onclick="check()"/>
 	<input type="text" id="song" name="song" onchange="check()" />
 	<input type="text" onkeydown="alert('키누름')" />
 	<h1 style= "background-color:#e9497c;">
