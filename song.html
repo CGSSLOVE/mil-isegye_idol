@@ -16,11 +16,12 @@
 	</script>
 	<script>
 	function daynight(){
-		if(document.getElementByID("backcolor").value=="night"){
+		var va1=document.getElementByID("backcolor").value
+		if(va1=="night"){
 			document.getElementByID("backcolor").value="day";
 			alert("변경");
 		}
-		else if(document.getElementByID("backcolor").value=="day"){
+		else if(va1=="day"){
 			document.getElementByID("backcolor").value="night";
 		}
 		else {
