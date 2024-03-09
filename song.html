@@ -19,10 +19,13 @@
 		var va1=document.getElementById("backcolor").value;
 		if(va1=="night"){
 			document.getElementById("backcolor").value="day";
-			alert("변경");
+			document.querySelector('body').style.backgroundColor="black";
+			document.querySelector('body').style.color="white";
 		}
 		else if(va1=="day"){
 			document.getElementById("backcolor").value="night";
+			document.querySelector('body').style.backgroundColor="white";
+			document.querySelector('body').style.color="black";
 		}
 		else {
 			alert("오류");
