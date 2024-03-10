@@ -12,6 +12,7 @@
 			return;
 		}
 		var str=scp1.trim();
+		str=str.replace(/\s/gi,'');
 		str=str.toUpperCase();
 		if(songlist.findIndex(index=>index==str)>-1){
 			alert(scp1+"(은/는) 이세계 아이돌의 노래가 맞습니다.");
