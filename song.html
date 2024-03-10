@@ -6,7 +6,16 @@
 
 	<script>
 	function check(){
-		alert(songlist[0]);			
+		var scp1=document.getElementById("song").value;	
+		var str=scp1.trim();
+		str=str.toUpperCase();
+		if(songlist.findIndex(index=>index==str)>-1){
+			alert(scp1+"은/는 이세계 아이돌의 노래가 맞습니다.");
+		}
+		else{
+			alert(scp1+"은 이세계 아이돌의 노래가 맞습니다.");
+		}
+		
 	}
 		/* var scp=document.getElementsByName("song"); 
 		 alert(scp[0].value); 
