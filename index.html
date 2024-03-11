@@ -3,6 +3,30 @@
 <head>
 	<title>이세계 아이돌</title>
 	<meta charset="utf-8">
+	<script>
+		function daynight(e){
+		var va1=e.value;
+		var sector =document.querySelector('body').style;
+		if(va1=="night"){
+			e.value="day";
+			sector.backgroundColor="black";
+			sector.color="white";
+			for(n=0;n<3;n++){
+				document.querySelectorAll('.li1')[n].style.color="white";
+			}
+		}
+		else if(va1=="day"){
+			e.value="night";
+			sector.backgroundColor="white";
+			sector.color="black";
+			for(n=0;n<3;n++){
+				document.querySelectorAll('.li1')[n].style.color="black";
+			}	
+		}
+		else {
+			alert("오류");
+		}
+	</script>
 </head>
 <body>	
 	<input type="button" id="backcolor" value="night" onclick="daynight(this)"/>
