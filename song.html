@@ -5,15 +5,13 @@
 	<meta charset="utf-8">
 
 	<script>
-	function check(){
-		var scp1=document.getElementById("song").value;	
+	function check(e){
+		var scp1=e.value;	
 		if (scp1==""){
 			alert("값이 입력되지 않았습니다.");
 			return;
 		}
-		var str=scp1.trim();
-		str=str.replace(/\s/gi,'');
-		str=str.toUpperCase();
+		var str=scp1.replace(/\s/gi,'').toUpperCase();
 		if(songlist.findIndex(index=>index==str)>-1){
 			alert(scp1+"(은/는) 이세계 아이돌의 노래가 맞습니다.");
 		}
@@ -30,24 +28,27 @@
 		}*/
 	</script>
 	<script>
-	function daynight(){
-		var va1=document.getElementById("backcolor").value;
+	function daynight(e){
+		var va1=e.value;
+		var sector =document.querySelector('body').style;
 		if(va1=="night"){
-			document.getElementById("backcolor").value="day";
-			document.querySelector('body').style.backgroundColor="black";
-			document.querySelector('body').style.color="white";
-			for(n=0;n<3;n++){
+			e.value="day";
+			sector.backgroundColor="black";
+			sector.color="white";
+			/*for(n=0;n<3;n++){
 				document.getElementsByClassName("list1")[n].style.color="white";
-			}
+			}*/
+			document.querySelector(.list1)[0].style.color="white";
 			
 		}
 		else if(va1=="day"){
 			document.getElementById("backcolor").value="night";
 			document.querySelector('body').style.backgroundColor="white";
 			document.querySelector('body').style.color="black";
-			for(n=0;n<3;n++){
+			/*for(n=0;n<3;n++){
 				document.getElementsByClassName("list1")[n].style.color="black";
-			}
+			}*/
+			document.querySelector(.list1)[0].style.color="black";
 			
 		}
 		else {
@@ -75,10 +76,10 @@
 	<h1 style= "background-color:#e9497c;">
 		<a style="text-decoration:none;color:white" href="index.html">이세계아이돌</a>
 	</h1>
-	<ul>
-		<li><a class="list1" style="text-decoration:none;color:black" href="outline.html">개요</a></li>
-		<li><a class="list1" style="text-decoration:none;color:black" href="member.html">멤버</a></li>
-		<li><a class="list1" style="text-decoration:none;color:black" href="song.html">노래</a></li>
+	<ul class="list1">
+		<li><style="text-decoration:none;color:black" href="outline.html">개요</a></li>
+		<li><style="text-decoration:none;color:black" href="member.html">멤버</a></li>
+		<li><style="text-decoration:none;color:black" href="song.html">노래</a></li>
 	</ul>
 	<p>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/fgSXAKsq-Vo?si=ghMmvhMnJW4-fpRn" 
