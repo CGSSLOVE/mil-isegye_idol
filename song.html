@@ -4,7 +4,7 @@
 	<title>이세계 아이돌</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href=li1.css">
-	<script type="text/javascript" src="fc1.js"></script>
+	<script type="text/javascript" src="DN.js" defer></script>
 	<script>
 	var songlist =['LOCKDOWN','KIDDING','ANOTHERWORLD','REWIND','RE:WIND','WINTERSPRING','OVER','SUPERHERO','BUTYOUWANTMORE','ISEGYEIDOLCYPHER','리와인드','겨울봄','키딩','락다운','어나더월드',
 		       '오버','슈퍼히어로','버츄원몰','이세계아이돌싸이퍼','이세돌싸이퍼'];
@@ -28,30 +28,6 @@
 		if(scp1=="lockdown"){
 		alert("wow");
 		}*/
-	function daynight(e){
-		var va1=e.value;
-		var sector =document.querySelector('body').style;
-		var list1 = document.querySelectorAll('.li1');
-		if(va1=="night"){
-			e.value="day";
-			sector.backgroundColor="black";
-			sector.color="white";
-			for(i=0;i<list1.length;i++){
-				list1[i].style.color="white";
-			}
-		}
-		else if(va1=="day"){
-			e.value="night";
-			sector.backgroundColor="white";
-			sector.color="black";
-			for(i=0;i<list1.length;i++){
-				list1[i].style.color="black";
-			}	
-		}
-		else {
-			alert("오류");
-		}
-	}
 	function ex(e){
 			alert(e.value);
 	}
