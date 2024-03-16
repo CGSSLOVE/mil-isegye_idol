@@ -6,39 +6,36 @@
 	<link rel="stylesheet" type="text/css" href=li1.css?after">
 	<script type="text/javascript" src="DN.js" defer></script>
 	<script>
-	var songlist =['LOCKDOWN','KIDDING','ANOTHERWORLD','REWIND','RE:WIND','WINTERSPRING','OVER','SUPERHERO','BUTYOUWANTMORE','ISEGYEIDOLCYPHER','리와인드','겨울봄','키딩','락다운','어나더월드',
-		       '오버','슈퍼히어로','버츄원몰','이세계아이돌싸이퍼','이세돌싸이퍼'];
-	function check(e){
+	var fc1 = {
+		check:function(e){
 		var scp1=e.value;	
-		if (scp1==""){
+			if (scp1==""){
 			alert("값이 입력되지 않았습니다.");
 			return;
-		}
+			}
 		var str=scp1.replace(/\s/gi,'').toUpperCase();
-		if(songlist.findIndex(index=>index==str)>-1){
+			if(this.songlist.findIndex(index=>index==str)>-1){
 			alert(scp1+"(은/는) 이세계 아이돌의 노래가 맞습니다.");
-		}
-		else{
+			}
+			else{
 			alert(scp1+"(은/는) 이세계 아이돌의 노래가 아닙니다.");
-		}
-	}
-		/* var scp=document.getElementsByName("song"); 
-		 alert(scp[0].value); 
-		var scp1=document.getElementById("song").value;
-		if(scp1=="lockdown"){
-		alert("wow");
-		}*/
-	function ex(e){
-			alert(e.value);
-	}
+			}
+		},
+		songlist:['LOCKDOWN','KIDDING','ANOTHERWORLD','REWIND','RE:WIND','WINTERSPRING','OVER','SUPERHERO','BUTYOUWANTMORE','ISEGYEIDOLCYPHER','리와인드','겨울봄','키딩','락다운','어나더월드',
+		       '오버','슈퍼히어로','버츄원몰','이세계아이돌싸이퍼','이세돌싸이퍼'],
+	};
+		
 	</script>
+	
 </head>
 <body>
 	<input type="button" id="backcolor" value="night" onclick="daynight(this)"/>
-	<input type="button" value="check" onclick="check(document.querySelector('#song'))"/>
+	<input type="button" value="check" onclick="fc1.check(document.querySelector('#song'))"/>
 	<input type="text" id="song" name="song"/>
+	
 	<!-- <input type="text" onkeydown="alert('키누름')" />
 	<input type="button" value="info" onclick="alert('이세계 아이돌의 노래입니다')"/> -->
+	
 	<h1 style= "background-color:#e9497c;"> 
 		<a style="text-decoration:none;color:white" href="index.html">이세계아이돌</a>
 	</h1>
