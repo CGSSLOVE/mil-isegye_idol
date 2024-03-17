@@ -45,11 +45,17 @@
 			border-color:blue;
 			border-style:solid;
 		}
+		#main_upright_box{
+			display:inline-block;
+			width:20%;
+			height:90px;
+			margin:0px;
+		}
 	</style>
 </head>
 <body>	
 	<div id="main_up" >
-		<div style="display:inline-block;width:20%;height:90px;margin-block-start:0px;">
+		<div id="main_upright_box">
 			<input type="text" class="up" id="song" name="song"/> 
 			<input type="button" class="up" id="backcolor" value="night" onclick="daynight(this)"/>
 			<input type="button" class="up" value="check" onclick="fc1.check(document.querySelector('#song'))"/>
