@@ -34,14 +34,18 @@
 		a{
 			text-decoration:none;
 		}
+		.up{
+			width:auto;
+			height:auto;
+		}
 	</style>
 </head>
 <body>	
 	<div style="width:100%;height:91px;border-width:1px;border-color:blue;border-style:solid">
 		<div style="display:inline-block;width:20%;height:90px;margin-block-start:0px;">
-			<input type="button" id="backcolor" value="night" onclick="daynight(this)"/>
-			<input type="button" value="check" onclick="fc1.check(document.querySelector('#song'))"/>
-			<input type="text" id="song" name="song"/> 
+			<input type="button" class="up" id="backcolor" value="night" onclick="daynight(this)"/>
+			<input type="button" class="up" value="check" onclick="fc1.check(document.querySelector('#song'))"/>
+			<input type="text" class="up" id="song" name="song"/> 
 		</div>
 		
 		<div style="display:inline-block;float:left;width:80%;height:90px;">
