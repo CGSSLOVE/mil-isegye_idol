@@ -5,3 +5,28 @@
 .isedol{
 	font-weight:bold;
 	}
+html, body{
+	width:100%;
+	height:100%;
+	margin:0px;
+}
+
+#main_up h1{
+	font-size:54px;
+	margin:0px;
+	background-color:#e9497c;
+	padding:5px;
+	}
+a{
+	text-decoration:none;
+}
+#main_up{
+	display:grid;
+        border-bottom:1px solid black;
+	border-right:1px solid black;
+        grid-template-columns: 1fr 150px;
+}
+#main_down{
+	display:grid;
+	grid-template-columns: 1fr 150px;
+}
