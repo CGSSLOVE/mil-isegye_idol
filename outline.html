@@ -7,15 +7,29 @@
 	<script type="text/javascript" src="DN.js" defer></script>
 </head>
 <body>	
-	<input type="button" id="backcolor" value="night" onclick="daynight(this)"/>
-	<h1 style= "background-color:#e9497c;">
-		<a style="text-decoration:none;color:white" href="index.html">이세계아이돌</a>
-	</h1>
-	<ul>
-		<li><a class="li1" href="outline.html">개요</a></li>
-		<li><a class="li1" href="member.html">멤버</a></li>
-		<li><a class="li1" href="song.html">노래</a></li>
-	</ul>
+	<div id="main">
+		<div id="main_up" >
+			<div style="width:100%;height:80px;">
+				<h1> 
+					<a style="color:white" href="index.html">이세계아이돌</a>
+				</h1>
+			</div>
+		
+			<div id="main_upright_box">
+				<div id="main_up_text">
+					<input type="text" class="up" id="song" name="song"/> 
+				</div>
+			
+				<div id="main_up_button">
+					<input type="button" class="up" id="backcolor" value="night" onclick="daynight(this)"/>
+					<input type="button" class="up" value="check" onclick="fc1.check(document.querySelector('#song'))"/>
+				</div>
+			</div>
+	
+		</div>
+
+		<div id="main_down">
+	
 <p style="margin-top:45px">
 <span class="isedol">이세계아이돌</span>은 버츄얼 아이돌 그룹을 컨셉으로 삼고 있고, 실제로도 앨범을 발매하며 커버 곡과 오리지널 곡같은 음악 활동을 적극적으로 이어가고 있지만, 처음부터 장기 프로젝트로 계획된 것은 아니었다.
 우왁굳은 GTA 4 방송을 하던 과거부터 동등한 스트리머들끼리의 합방보단 자신의 주도 아래 시청자들이 방송에 적극적으로 참여하는 '시참' 콘텐츠를 선호했다.
@@ -25,6 +39,17 @@
 과도한 이미지 소모를 이유로 고멤 0기가 해체된 이후 우왁굳은 방송에 참여하는 시청자들이 각각의 컨셉을 가진 캐릭터를 만들고 연기하는 쪽으로 방향성을 바꾸게 된다.
 이후로 고정 멤버는 반드시 VRChat 아바타를 이용해 우왁굳의 방송에만 참여하게 되면서 한 명의 시청자가 아닌 각자 독특한 설정과 개성을 지닌 왁타버스 캐릭터로 발전하게 되었다.
 </p>
+
+			<div id="main_down_ul">
+				<ul>
+					<li><a class="li1" href="outline.html">개요</a></li>
+					<li><a class="li1" href="member.html">멤버</a></li>
+					<li><a class="li1" href="song.html">노래</a></li>
+				</ul>
+			</div> 
+		</div>
+	</div>
+
 	<!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
