@@ -17,7 +17,6 @@ html, body{
 	width:100%;
 
 }
-
 #main_up h1{
 	font-size:54px;
 	margin:0px;
@@ -58,4 +57,8 @@ a{
 	border-right: 1px solid black;
 	border-bottom: 1px solid black;
 	min-width:150px;
+}
+#main_down_text{
+	width:100%;
+	margin:20px;
 }
