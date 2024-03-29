@@ -1,3 +1,6 @@
+.scroll {
+  overflow: hidden;
+}
 .li1{
 	text-decoration:none;
 	color:black;
