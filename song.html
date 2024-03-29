@@ -7,19 +7,6 @@
 	<script type="text/javascript" src="DN.js" defer></script>
 	
 	<style> 
-		@media(width<1340px){
-			#songlist{
-				display:grid;
-				grid-template-rows: 315px;
-				row-gap: 10px;
-				min-width:560px;
-			}
-			#main_down_text{
-				padding-right:20px;
-			}
-		}
-		
-		
 		#main_upright_box{
 			display:grid;
 			grid-template-rows: 1fr 1fr;
@@ -53,7 +40,19 @@
 		}
 	</style>
 </head>
-<body>	
+<body>	<style>
+	@media(width<1340px){
+			#songlist{
+				display:grid;
+				grid-template-rows: 315px;
+				row-gap: 10px;
+				min-width:560px;
+			}
+			#main_down_text{
+				padding-right:20px;
+			}
+	}</style>
+	
 	<div id="main">
 		<div id="main_up" >
 			<div style="width:100%;">
