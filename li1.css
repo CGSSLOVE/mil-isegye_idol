@@ -1,6 +1,6 @@
 body{
  -ms-overflow-style: none;
-	min-width:100%;
+	min-width:800px;
 	min-height:100%;
  }
 ::-webkit-scrollbar {
