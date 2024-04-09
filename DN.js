@@ -1,7 +1,6 @@
 function daynight(e){
 		var va1=e.value;
 		var sector =document.querySelector('body').style;
-		
 		if(va1=="night"){
 			e.value="day";
 			sector.backgroundColor="black";
@@ -16,7 +15,6 @@ function daynight(e){
 			alert("오류");
 		}
 	}
-
 var fc1 = {
 	check:function(e){
 	var scp1=e.value;	
@@ -35,5 +33,3 @@ var fc1 = {
 	songlist:['LOCKDOWN','KIDDING','ANOTHERWORLD','REWIND','RE:WIND','WINTERSPRING','OVER','SUPERHERO','BUTYOUWANTMORE','ISEGYEIDOLCYPHER','리와인드','겨울봄','키딩','락다운','어나더월드',
 	       '오버','슈퍼히어로','버츄원몰','이세계아이돌싸이퍼','이세돌싸이퍼'],
 };
-	
-	
