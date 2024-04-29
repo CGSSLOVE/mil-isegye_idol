@@ -52,9 +52,9 @@
 				<p>
 					<h1> 폼 연습, 라디오, 체크박스, 콤보박스 </h1>
 					<form action="http://localhost/login.php">
-						<p><lable>아이디</lable> : <input type="text" name="id" value="아이디를 입력해주세요."></p>
-						<p><lable>비밀번호</lable> : <input type="password" name="pw" value="12345678"></p>
-						<p><lable>공지</lable> :  <textarea cols="50" rows="20">
+						<p><lable for="id">아이디</lable> : <input type="text" id="id" name="id" value="아이디를 입력해주세요."></p>
+						<p><lable for="pw">비밀번호</lable> : <input type="password" id="pw" name="pw" value="12345678"></p>
+						<p><lable for="notcie">공지</lable> :  <textarea id="notice" cols="50" rows="20">
 							      3.1415926535
 								8979323846
 								2643383279
@@ -89,14 +89,14 @@
 							</select>
 						</p>
 						<p>
-							<lable>10대</lable> : <input type="radio" name="age" value="10대">
-						        <lable>20대</lable> : <input type="radio" name="age" value="20대" checked>
-						        <lable>30대</lable> : <input type="radio" name="age" value="30대">
+							<lable for="age_10">10대</lable> : <input type="radio" id="age_10" name="age" value="10대">
+						        <lable for="age_20">20대</lable> : <input type="radio" id="age_20" name="age" value="20대" checked>
+						        <lable for="age_30">30대</lable> : <input type="radio" id="age_30" name="age" value="30대">
 						</p>
 						<p>
-							<lable>95</lable> : <input type="checkbox" name="size" value="95">
-					                <lable>100</lable> : <input type="checkbox" name="size" value="100" checked>
-					                <lable>105</lable> : <input type="checkbox" name="size" value="105" checked>	
+							<lable for="sz_95">95</lable> : <input type="checkbox" id="sz_95" name="size" value="95">
+					                <lable for="sz_100">100</lable> : <input type="checkbox" id="sz_100" name="size" value="100" checked>
+					                <lable for="sz_105">105</lable> : <input type="checkbox" id="sz_105" name="size" value="105" checked>	
 						</p>
 						<input type="button" onclick="alert('안녕 세상')" value="HW">
 						<input type="reset" value="리셋">
